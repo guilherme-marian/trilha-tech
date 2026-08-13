@@ -12,7 +12,7 @@ function Titulo(){
         );
     
 }
-function camposCadastro(){
+function CamposCadastro(){
     return(
         
 
@@ -53,7 +53,7 @@ function Cadastro() {
         <div className="cadastro">
             
         <Titulo/>
-        <camposCadastro/>
+        <CamposCadastro/>
 
         </div>
         
