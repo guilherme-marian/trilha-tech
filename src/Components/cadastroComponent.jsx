@@ -1,25 +1,8 @@
-import cadastroComponent from "./../Components/cadastroComponent.jsx";
-import React, { Component } from 'react';
-
-
-function Titulo(){
-    
-        return(
-            <div className="titulo">
-                <h1>Trilha Tech</h1>
-                <p>Descubra seu potencial na tecnologia!</p>
-            </div>
-        );
-    
-}
 function Cadastro(){
     return(
-        <>
-        <Titulo/>
-
         <div className="card">
             <form action="/cadastro" method="post" class="form-usuario">
-                    <div className="form-group">
+                    <div class="form-group">
 
                         <label for="nome">Nome Completo:</label>
                         <input type="text" id="nome" name="nome" placeholder="Digite seu nome completo" required/>
@@ -35,15 +18,10 @@ function Cadastro(){
 
                         <label for="senha">Senha:</label>
                         <input type="text" id="senha" name="senha" placeholder="Digite sua senha" required/>
-
-                        <button type="submit">
-                            Cadastrar
-                        </button>
                     </div>
                     </form>
                     
             </div>
-</>
     )
 }
 

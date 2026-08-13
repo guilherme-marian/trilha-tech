@@ -1,10 +1,10 @@
 import './App.css';
+import AppRoutes from './routes.js'
 
 function App() {
   return (
     <div className="App">
-      <p>Início projeto dolorido</p>
-      <h1>tirilia téki</h1>
+      <AppRoutes/>
     </div>
   );
 }
