@@ -1,5 +1,5 @@
-import cadastroComponent from "./../Components/cadastroComponent.jsx";
 import React, { Component } from 'react';
+import './cadastro.css';
 
 
 function Titulo(){
@@ -12,12 +12,11 @@ function Titulo(){
         );
     
 }
-function Cadastro(){
+function camposCadastro(){
     return(
-        <>
-        <Titulo/>
+        
 
-        <div className="card">
+        <div className="campos-cadastro">
             <form action="/cadastro" method="post" class="form-usuario">
                     <div className="form-group">
 
@@ -43,8 +42,23 @@ function Cadastro(){
                     </form>
                     
             </div>
-</>
+
     )
+}
+
+
+function Cadastro() {
+    return(
+        
+        <div className="cadastro">
+            
+        <Titulo/>
+        <camposCadastro/>
+
+        </div>
+        
+    )
+    
 }
 
 export default Cadastro;

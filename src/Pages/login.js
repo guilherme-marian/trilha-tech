@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import './login.css';
-import Andre from './../Assets/Andre.png';
+import Andre from './../Assets/andreLogin.png';
 
 
 class Titulo extends Component {
@@ -20,22 +20,23 @@ class CamposLogin extends Component {
         return(
             <>
             <div className="campos-login">
+                <form action={"/logar"} method='POST'>
+                    <label>E-mail:</label>
 
-                <label>E-mail:</label>
+                    <input
+                        type="email"
+                        placeholder="Digite seu e-mail"
+                    />
 
-                <input
-                    type="email"
-                    placeholder="Digite seu e-mail"
-                />
+                    <label>Senha:</label>
 
-                <label>Senha:</label>
+                    <input
+                        type="password"
+                        placeholder="Digite sua senha"
+                    />
 
-                <input
-                    type="password"
-                    placeholder="Digite sua senha"
-                />
-
-                <button>Entrar</button>
+                    <input class="submit" type="submit" value="Entrar"/>
+                </form>
                 <p>Não possui conta? <a href="/cadastro">Cadastre-se</a></p>
             </div>
             
