@@ -1,34 +1,34 @@
 import React, { Component } from 'react';
-import './login.css';
-import Andre from './../Assets/andreLogin.png';
-
+import Style from './login.module.css'
 
 class Titulo extends Component {
     render() {
         return(
-            <div className="titulo">
-                <h1>Trilha Tech</h1>
-                <p>Descubra seu potencial na tecnologia!</p>
+            <div>
+                <div className={Style.Titulo}>
+                    <h1>Trilha Tech</h1>
+                    <p>Descubra seu potencial na tecnologia!</p>
+                </div>
             </div>
+            
         );
     }
 }
 
-
 class CamposLogin extends Component {
     render() {
         return(
-            <>
-            <div className="campos-login">
+        <div>
+            <div className={Style.camposLogin}>
                 <form action={"/logar"} method='POST'>
-                    <label>E-mail:</label>
+                    <label><b>E-mail:</b></label>
 
                     <input
                         type="email"
                         placeholder="Digite seu e-mail"
                     />
 
-                    <label>Senha:</label>
+                    <label><b>Senha:</b></label>
 
                     <input
                         type="password"
@@ -37,10 +37,10 @@ class CamposLogin extends Component {
 
                     <input class="submit" type="submit" value="Entrar"/>
                 </form>
-                <p>Não possui conta? <a href="/cadastro">Cadastre-se</a></p>
+                <p className={Style.hyperlink}><a href="/cadastro">Cadastre-se</a></p>
             </div>
             
-            </>
+        </div>
         );
     }
 }
@@ -49,19 +49,16 @@ class CamposLogin extends Component {
 class Login extends Component {
     render() {
         return(
-            <div className="login">
+            <div className={Style.container}>
+                <div className={Style.Login}>
+                
+                    <Titulo />                  
 
-                <Titulo />
+                    <CamposLogin />
 
-                <img
-                    src={Andre}
-                    className="personagem"
-                    alt="Andre"
-                />
-
-                <CamposLogin />
-
+                </div>
             </div>
+            
         );
     }
 }

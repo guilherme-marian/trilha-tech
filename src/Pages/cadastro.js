@@ -1,11 +1,10 @@
 import React from 'react';
-import './cadastro.css';
-
+import Style from './cadastro.module.css'
 
 function Titulo(){
     
         return(
-            <div className="titulo">
+            <div className={Style.Titulo}>
                 <h1>Trilha Tech</h1>
                 <p>Descubra seu potencial na tecnologia!</p>
             </div>
@@ -15,8 +14,8 @@ function Titulo(){
 function CamposCadastro(){
     return(
         
-
-        <div className="campos-cadastro">
+    <div>
+        <div className={Style.camposCadastro}>
             <form action="/cadastro" method="post" class="form-usuario">
                     <div className="form-group">
 
@@ -42,6 +41,8 @@ function CamposCadastro(){
                     </form>
                     
             </div>
+        <p className={Style.hyperlink}><a href="/">Login</a></p>
+    </div>
 
     )
 }
@@ -49,13 +50,15 @@ function CamposCadastro(){
 
 function Cadastro() {
     return(
-        
-        <div className="cadastro">
+    <div className={Style.container}>
+        <div className={Style.Cadastro}>
             
         <Titulo/>
         <CamposCadastro/>
 
         </div>
+    </div>
+        
         
     )
     

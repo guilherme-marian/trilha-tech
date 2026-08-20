@@ -1,23 +1,19 @@
-body { 
+.container { 
     margin: 0; 
     padding: 0; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
  
-    font-family: "Courier New", monospace; 
+    font-family:'montserrat' ; 
  
-    background: linear-gradient( 
-        135deg, 
-        #432078, 
-        #55328c 
-    ); 
+    background-color: white;
 } 
  
  
-
- 
-.campos-cadastro { 
+.camposCadastro { 
     width: 100%; 
-    min-height: 100vh; 
- 
+    
     display: flex; 
     align-items: center; 
     justify-content: center; 
@@ -25,7 +21,11 @@ body {
     gap: 100px; 
 } 
  
- 
+.camposCadastro form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 
  
 .titulo { 
@@ -36,7 +36,9 @@ body {
 } 
  
 .titulo h1 { 
-    margin: 0; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
  
     font-size: 52px; 
     font-weight: 700; 
@@ -54,8 +56,7 @@ body {
  
 
  
-.campos-cadastro { 
-    width: 230px; 
+.camposCadastro { 
  
     background-color: white; 
  
@@ -63,13 +64,10 @@ body {
  
     border-radius: 6px; 
  
-    box-sizing: border-box; 
-} 
+    
+}
  
- 
-
- 
-.campos-cadastro label { 
+.camposCadastro label { 
     display: block; 
  
     font-size: 14px; 
@@ -82,7 +80,7 @@ body {
  
 
  
-.campos-cadastro input { 
+.camposCadastro input { 
     width: 100%; 
     height: 35px; 
  
@@ -104,7 +102,7 @@ body {
  
 
  
-.campos-cadastro button { 
+.camposCadastro button { 
     width: 100%; 
     height: 35px; 
  
@@ -117,16 +115,22 @@ body {
  
     color: white; 
  
-    font-family: "Courier New", monospace; 
     font-size: 13px; 
  
     cursor: pointer; 
 } 
  
- 
+p {
+    color: black;
+}
+
+.hyperlink a{
+    text-decoration:underline;
+    color: black
+}
 
  
-.campos-cadastro button:hover { 
+.camposCadastro button:hover { 
     background-color: #351783; 
 }
 
