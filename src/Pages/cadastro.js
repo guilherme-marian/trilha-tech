@@ -37,11 +37,11 @@ function CamposCadastro(){
                         <button type="submit">
                             Cadastrar
                         </button>
+                        <p className={Style.hyperlink}><a href="/">Login</a></p>
                     </div>
                     </form>
-                    
             </div>
-        <p className={Style.hyperlink}><a href="/">Login</a></p>
+        
     </div>
 
     )
